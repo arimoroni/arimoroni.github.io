@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nüva | Indumentaria Artesanal Masculina</title>
+    <!-- Carga Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&family=Azeret+Mono:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        // Configuración de la paleta de colores de Tailwind para coincidir con la presentación.
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nuva-primary': '#8c7b60', // Warm Brown/Gold (Accent)
+                        'nuva-secondary': '#d4cbb8', // Light Tan (Borders/Dividers)
+                        'nuva-background': '#fffaf1', // Off-White/Cream (Main BG)
+                        'nuva-text-dark': '#2d2a26', // Dark Brown/Charcoal (Headings)
+                        'nuva-text-body': '#4b4844', // Body Text
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Arimo', 'sans-serif'],
+                        serif: ['Arimo', 'serif'],
+                        mono: ['Azeret Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados para la tipografía de Nüva */
+        .h1-nuva {
+            font-family: 'Azeret Mono', monospace;
+        }
+    </style>
+</head>
+<body class="bg-nuva-background text-nuva-text-body">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-nuva-background/95 backdrop-blur-sm shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#" class="text-3xl font-mono font-bold text-nuva-text-dark h1-nuva">Nüva</a>
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#coleccion" class="text-base font-medium text-nuva-text-body hover:text-nuva-primary transition duration-150 ease-in-out">Colección</a>
+                    <a href="#filosofia" class="text-base font-medium text-nuva-text-body hover:text-nuva-primary transition duration-150 ease-in-out">Filosofía</a>
+                    <a href="#proceso" class="text-base font-medium text-nuva-text-body hover:text-nuva-primary transition duration-150 ease-in-out">Proceso</a>
+                    <a href="#contacto" class="text-base font-medium text-nuva-text-body hover:text-nuva-primary transition duration-150 ease-in-out">Contacto</a>
+                </nav>
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                    <a href="#coleccion" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-xl shadow-sm text-base font-medium text-white bg-nuva-primary hover:bg-nuva-text-dark transition duration-300">
+                        Comprar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="relative overflow-hidden pt-16 sm:pt-24 lg:pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                
+                <!-- Text Content -->
+                <div class="sm:text-left text-center">
+                    <h1 class="text-4xl sm:text-6xl font-extrabold text-nuva-text-dark h1-nuva tracking-tight">
+                        Indumentaria <br class="hidden sm:inline"> Artesanal Masculina
+                    </h1>
+                    <p class="mt-4 text-xl text-nuva-text-body max-w-lg mx-auto sm:mx-0">
+                        Diseño, Calidad y Autenticidad. Prendas únicas confeccionadas a mano con un compromiso local y consciente.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row sm:justify-start justify-center gap-4">
+                        <a href="#coleccion" class="w-full sm:w-auto px-8 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-nuva-primary hover:bg-nuva-text-dark shadow-lg transition duration-300 transform hover:scale-[1.02]">
+                            Ver Colección
+                        </a>
+                        <a href="#filosofia" class="w-full sm:w-auto px-8 py-3 border border-nuva-primary text-base font-medium rounded-xl text-nuva-primary bg-transparent hover:bg-nuva-secondary transition duration-300">
+                            Nuestra Filosofía
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="mt-12 lg:mt-0 relative">
+                    <div class="h-96 w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-nuva-secondary">
+                        <!-- Imagen de textura de tela natural y costura -->
+                        <img class="h-full w-full object-cover" src="http://googleusercontent.com/image_collection/image_retrieval/7105765600653998233" 
+                             alt="Textura de tela natural y costura artesanal">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Filosofía / Diferencial Section -->
+    <section id="filosofia" class="py-16 sm:py-24 bg-nuva-secondary/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center text-3xl sm:text-4xl font-extrabold text-nuva-text-dark h1-nuva">
+                ¿Qué hace a Nüva diferente?
+            </h2>
+            <div class="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-3 lg:gap-8">
+                
+                <!-- Tile 1: Artesanal -->
+                <div class="p-8 bg-nuva-background rounded-2xl shadow-xl transition duration-300 hover:shadow-2xl hover:scale-[1.01] border-t-4 border-nuva-primary">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-nuva-primary/20 text-nuva-primary">
+                        <i class="fa-solid fa-hand-holding-heart text-xl"></i>
+                    </div>
+                    <h3 class="mt-5 text-xl font-bold text-nuva-text-dark h1-nuva">Hecho a Mano (Artesanal)</h3>
+                    <p class="mt-2 text-nuva-text-body">
+                        Cada prenda es confeccionada por los fundadores. Cero producción en masa, 100% dedicación y control de calidad.
+                    </p>
+                </div>
+
+                <!-- Tile 2: Durabilidad -->
+                <div class="p-8 bg-nuva-background rounded-2xl shadow-xl transition duration-300 hover:shadow-2xl hover:scale-[1.01] border-t-4 border-nuva-primary">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-nuva-primary/20 text-nuva-primary">
+                        <i class="fa-solid fa-gem text-xl"></i>
+                    </div>
+                    <h3 class="mt-5 text-xl font-bold text-nuva-text-dark h1-nuva">Diseño y Durabilidad</h3>
+                    <p class="mt-2 text-nuva-text-body">
+                        Priorizamos materiales de calidad y procesos robustos para que tu ropa dure años, no estaciones.
+                    </p>
+                </div>
+
+                <!-- Tile 3: Consciente -->
+                <div class="p-8 bg-nuva-background rounded-2xl shadow-xl transition duration-300 hover:shadow-2xl hover:scale-[1.01] border-t-4 border-nuva-primary">
+                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-nuva-primary/20 text-nuva-primary">
+                        <i class="fa-solid fa-leaf text-xl"></i>
+                    </div>
+                    <h3 class="mt-5 text-xl font-bold text-nuva-text-dark h1-nuva">Consumo Consciente</h3>
+                    <p class="mt-2 text-nuva-text-body">
+                        Una respuesta al "Fast Fashion". Promovemos el valor del trabajo manual y el desarrollo local en Capilla del Señor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Colección/Producto Section -->
+    <section id="coleccion" class="py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-nuva-text-dark h1-nuva">
+                    Nuestra Colección
+                </h2>
+                <p class="mt-4 text-xl text-nuva-text-body">
+                    Estilo propio en cada costura. Descubre la colección inicial de Nüva.
+                </p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Product 1: Remeras -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-full h-80 bg-gray-200">
+                        <!-- Imagen de Ropa doblada minimalista -->
+                        <img src="http://googleusercontent.com/image_collection/image_retrieval/6378506725033933178" 
+                             alt="Remeras Nüva de algodón orgánico" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute inset-0 bg-nuva-text-dark/40 group-hover:bg-nuva-text-dark/60 transition duration-300 flex items-end">
+                        <div class="p-6 w-full bg-nuva-background/90">
+                            <h3 class="text-xl font-bold text-nuva-text-dark h1-nuva">Remeras</h3>
+                            <p class="text-sm text-nuva-text-body">Básicos con un giro artesanal. Variedad de texturas.</p>
+                            <span class="mt-2 block text-sm font-semibold text-nuva-primary">Ver Detalles &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Buzos -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-full h-80 bg-gray-200">
+                        <!-- Imagen de buzo/hoodie minimalista -->
+                        <img src="https://placehold.co/600x400/8c7b60/fffaf1?text=BUZOS+NÜVA" 
+                             alt="Buzos artesanales Nüva" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute inset-0 bg-nuva-text-dark/40 group-hover:bg-nuva-text-dark/60 transition duration-300 flex items-end">
+                        <div class="p-6 w-full bg-nuva-background/90">
+                            <h3 class="text-xl font-bold text-nuva-text-dark h1-nuva">Buzos</h3>
+                            <p class="text-sm text-nuva-text-body">Confort y estilo. Confección en telar y terminaciones reforzadas.</p>
+                             <span class="mt-2 block text-sm font-semibold text-nuva-primary">Ver Detalles &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Pantalones -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="w-full h-80 bg-gray-200">
+                        <!-- Imagen de pantalones de estilo casual/artesanal -->
+                        <img src="https://placehold.co/600x400/4b4844/fffaf1?text=PANTALONES+NÜVA" 
+                             alt="Pantalones Nüva de diseño propio" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute inset-0 bg-nuva-text-dark/40 group-hover:bg-nuva-text-dark/60 transition duration-300 flex items-end">
+                        <div class="p-6 w-full bg-nuva-background/90">
+                            <h3 class="text-xl font-bold text-nuva-text-dark h1-nuva">Pantalones</h3>
+                            <p class="text-sm text-nuva-text-body">Diseño propio con énfasis en la durabilidad y el ajuste perfecto.</p>
+                            <span class="mt-2 block text-sm font-semibold text-nuva-primary">Ver Detalles &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mt-12 text-center">
+                <a href="#contacto" class="px-6 py-3 border-2 border-nuva-primary text-base font-medium rounded-xl text-nuva-primary hover:bg-nuva-primary hover:text-white transition duration-300">
+                    Solicitar Catálogo Digital
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Proceso/Taller Section -->
+    <section id="proceso" class="py-16 sm:py-24 bg-nuva-secondary/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+                
+                <!-- Image -->
+                <div class="relative order-2 lg:order-1">
+                    <div class="h-96 w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-nuva-primary/50">
+                        <!-- Imagen de máquina de coser en taller -->
+                        <img class="h-full w-full object-cover" src="http://googleusercontent.com/image_collection/image_retrieval/14433934036966488482" 
+                             alt="Máquina de coser en el taller de Nüva">
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="mt-12 lg:mt-0 order-1 lg:order-2">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-nuva-text-dark h1-nuva">
+                        Nuestro Proceso Artesanal
+                    </h2>
+                    <p class="mt-4 text-xl text-nuva-text-body">
+                        Desde el boceto hasta la última puntada, todo se realiza con el mayor cuidado en nuestro taller doméstico.
+                    </p>
+                    <ul class="mt-8 space-y-4 text-nuva-text-body">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 text-nuva-primary"><i class="fa-solid fa-pen-ruler mt-1 mr-3"></i></div>
+                            <span><strong>Diseño Propio:</strong> Control total sobre la estética y el patrón de cada prenda.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 text-nuva-primary"><i class="fa-solid fa-scissors mt-1 mr-3"></i></div>
+                            <span><strong>Confección Manual:</strong> Corte y costura hecha por Ariel y Galo, garantizando precisión.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 text-nuva-primary"><i class="fa-solid fa-magnifying-glass mt-1 mr-3"></i></div>
+                            <span><strong>Control de Calidad:</strong> Revisión individualizada para asegurar la máxima durabilidad.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Footer / Contacto -->
+    <footer id="contacto" class="bg-nuva-text-dark/95 text-nuva-background py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- Brand Info -->
+                <div>
+                    <h3 class="text-2xl font-mono font-bold text-nuva-primary h1-nuva">Nüva</h3>
+                    <p class="mt-4 text-sm">Indumentaria con propósito. Creamos moda que dura, valorando el proceso artesanal.</p>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-white">Navegación</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#coleccion" class="hover:text-nuva-primary transition">Colección</a></li>
+                        <li><a href="#filosofia" class="hover:text-nuva-primary transition">Nuestra Filosofía</a></li>
+                        <li><a href="#proceso" class="hover:text-nuva-primary transition">El Taller</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-white">Ubicación & Contacto</h4>
+                    <p class="text-sm">Capilla del Señor, Bs. As., Argentina</p>
+                    <p class="text-sm mt-2">Envíanos un mensaje:</p>
+                    <a href="mailto:contacto@nuva.com" class="text-nuva-primary hover:text-white transition text-sm">contacto@nuva.com</a>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-white">Síguenos</h4>
+                    <div class="flex space-x-4 text-2xl">
+                        <a href="#" aria-label="Instagram" class="hover:text-nuva-primary transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook" class="hover:text-nuva-primary transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="WhatsApp" class="hover:text-nuva-primary transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-12 border-t border-nuva-secondary/50 pt-8 text-center text-sm">
+                <p>&copy; 2025 Nüva. Todos los derechos reservados. Proyecto Ariel Moroni & Galo Altamiranda.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
